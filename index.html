@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Surat Untuk Kansa 🤍</title>
+
+<style>
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#000000,#5a008a);
+    font-family:Arial,sans-serif;
+    color:white;
+    text-align:center;
+    overflow-x:hidden;
+}
+
+.container{
+    width:85%;
+    background:rgba(255,255,255,0.12);
+    padding:25px;
+    border-radius:25px;
+    box-shadow:0 0 35px #ff00ff;
+}
+
+h1{
+    color:#ff9de2;
+}
+
+h2{
+    color:white;
+}
+
+button{
+    background:#ff4fd8;
+    border:none;
+    color:white;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size:18px;
+}
+
+#surat{
+    display:none;
+    animation:muncul 2s;
+}
+
+p{
+    font-size:17px;
+    line-height:1.8;
+}
+
+
+@keyframes muncul{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+.hati{
+    position:fixed;
+    top:-10px;
+    font-size:25px;
+    animation:jatuh 5s linear infinite;
+}
+
+@keyframes jatuh{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(110vh);
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+
+<div id="cover">
+
+<h1>💌 Surat Untuk Kansa</h1>
+
+<h2>🤍</h2>
+
+<p>
+Ada sebuah pesan kecil yang ingin aku sampaikan...
+</p>
+
+<button onclick="buka()">
+Buka Surat 💌
+</button>
+
+</div>
+
+
+
+<div id="surat">
+
+<h1>🎂 Happy Birthday 🎂</h1>
+
+<h2>Khansa Phalosa Jannati</h2>
+
+
+<p>
+
+Untuk Kansa 🤍<br><br>
+
+Aku sebenernya bingung harus mulai dari mana nulis ini.
+Ada banyak hal yang pengen aku sampaikan, tapi mungkin selama ini belum pernah benar-benar tersampaikan.<br><br>
+
+Sebelum kamu baca semuanya, aku cuma mau bilang kalau surat ini aku tulis bukan untuk membuat kamu merasa terbebani atau merasa harus melakukan sesuatu.<br><br>
+
+Aku cuma ingin menyampaikan rasa terima kasih, permintaan maaf, dan doa baik yang selama ini masih aku simpan buat kamu.<br><br>
+
+Aku juga nggak tahu setelah kamu membaca ini kamu bakal merasa apa.
+Mungkin kamu akan terkejut, mungkin biasa aja, atau mungkin kamu memilih untuk tidak membalas.
+Apa pun itu, aku tetap menghargai keputusan kamu.<br><br>
+
+
+Happy birthday yaa, Kansa 🎂<br>
+dan selamat juga buat graduation-nya 🎓<br><br>
+
+
+Semoga di umur yang baru ini kamu selalu diberikan kesehatan, kebahagiaan, dan dikelilingi orang-orang baik.<br><br>
+
+Semoga semua yang kamu perjuangkan bisa berjalan lancar dan semua cita-cita yang kamu impikan bisa tercapai.<br><br>
+
+Walaupun aku cuma bisa mendukung dan mendoakan kamu dari jauh, aku tetap berharap semua hal baik datang ke kamu.<br><br>
+
+Makasih karena dulu pernah jadi bagian dari cerita yang sampai sekarang masih aku ingat.<br><br>
+
+Terima kasih sudah pernah hadir dan memberikan warna di hidup aku.<br><br>
+
+Bahagia selalu ya, Kansa 🤍<br><br>
+
+
+18 Agustus 2010 ✨<br><br>
+
+
+"You are always in my heart" 🤍<br><br>
+
+From: Ijong ❤️
+
+</p>
+
+
+</div>
+
+</div>
+
+
+
+<script>
+
+function buka(){
+
+document.getElementById("cover").style.display="none";
+
+document.getElementById("surat").style.display="block";
+
+}
+
+
+setInterval(()=>{
+
+let hati=document.createElement("div");
+
+hati.className="hati";
+
+hati.innerHTML="❤️";
+
+hati.style.left=Math.random()*100+"%";
+
+document.body.appendChild(hati);
+
+
+setTimeout(()=>{
+
+hati.remove();
+
+},5000);
+
+
+},300);
+
+
+</script>
+
+
+</body>
+</html>
